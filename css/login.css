@@ -1,0 +1,71 @@
+body{
+    background-color: white;
+}
+
+/*---------------TEXT INPUT---------------------------*/
+.tocenterlogin{
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    color: darkred;
+}
+
+input[type=text]{
+    padding: 0;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 250px;
+    position: relative;
+    border: 1px solid darkred;
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 4px;
+}
+
+input[type=password]{
+    padding: 0;
+    margin-bottom: 5px;
+    height: 30px;
+    width: 250px;
+    position: relative;
+    border: 1px solid darkred;
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Lato', sans-serif;
+    border-radius: 4px;
+}
+/*-------------------BUTTON---------------------------*/
+#loginButton{
+    cursor: pointer;
+    padding: 5px 40px;
+    margin-top: 3px;
+    background-color: white;
+    color: darkgray;
+    font: bold;
+    font-size: 18px;
+    border: 2px solid darkgray;   
+    border-radius: 8px;
+
+}
+
+#loginButton:hover{
+    box-shadow: 0 10px 20px darkgrey;
+    color: darkred; 
+}
+
+/*---------------------FOOTER--------------------*/
+.footer{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    height: 59px;
+    background-color: black;
+    text-align: center;
+}
+
