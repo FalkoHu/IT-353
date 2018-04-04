@@ -69,3 +69,16 @@ input[type=password]{
     text-align: center;
 }
 
+.footer>p{
+    border: 1px solid white;
+    padding: 3px;
+    display:inline-block;
+    color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+}
+.footer>p:hover{
+    background-color: white;
+    color: darkred;
+    cursor: pointer;
+}
