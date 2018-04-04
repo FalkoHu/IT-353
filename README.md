@@ -1,1 +1,1 @@
-# IT-353 at Illinois State University
+# IT-353 at Illinois State University.
