@@ -98,8 +98,14 @@ function search(){
                     var restaurantDiv = $("<div class='restaurantDiv'></div>")
                     var img = $("<img></img>");
                     img.attr("src", restaurantarray[i].image_url);
-                        console.log(restaurantarray[i].image_url);
+                    var  name = $("<p id='name'></p>");
+                    var phone = $("<p id='phone'></p>")
+                    name.html(restaurantarray[i].name);
+                    phone.html(restaurantarray[i].phone);
+                                     
                     restaurantDiv.append(img);
+                    restaurantDiv.append(name); 
+                    restaurantDiv.append(phone);
                     $("#middle").append(restaurantDiv);
 
                  }
