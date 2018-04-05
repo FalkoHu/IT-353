@@ -95,7 +95,8 @@ function search(){
                  console.log(restaurantarray);
                  for(var i=0; i< restaurantarray.length; i++){
 
-                    var restaurantDiv = $("<div class='restaurantDiv'></div>")
+                    var restaurantDiv = $("<div class='restaurantDiv'></div>");
+                    var textDiv = $("<div class='textDiv'></div>");
                     var img = $("<img></img>");
                     img.attr("src", restaurantarray[i].image_url);
                     var  name = $("<p id='name'></p>");
@@ -104,8 +105,9 @@ function search(){
                     phone.html(restaurantarray[i].phone);
                                      
                     restaurantDiv.append(img);
-                    restaurantDiv.append(name); 
-                    restaurantDiv.append(phone);
+                    restaurantDiv.append(textDiv);
+                    textDiv.append(name); 
+                    textDiv.append(phone);
                     $("#middle").append(restaurantDiv);
 
                  }

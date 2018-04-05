@@ -40,6 +40,20 @@ body{
     color: darkred; 
 }
 
+/* --------------------------------IMAGES------------------------------ */
+.restaurantDiv{
+    display:inline-block;
+    width:350px;
+    height:350px;
+    border:1px solid;
+    margin: 1px 1px 1px 1px;
+    text-align: center;
+}
+
+img{
+    width: 350px;
+    height: 300px;
+}
 
     /*---------------------FOOTER--------------------------------------*/
     .footer{
