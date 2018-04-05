@@ -83,22 +83,22 @@ $("#logout").click(function(){
 
 
 function search(){
-   // $("#middle").empty();
+     $("#middle").empty();
 
 
     var keyword = $("#keyword").val();
 
     $.get("http://opentable.herokuapp.com/api/restaurants?city="+keyword).done(
             function (response){ 
-                console.log(response);
-                 var restaurantarray = response;
-
+               
+                 var restaurantarray = response.restaurants;
+                 console.log(restaurantarray);
                  for(var i=0; i< restaurantarray.length; i++){
 
                     var restaurantDiv = $("<div class='restaurantDiv'></div>")
                     var img = $("<img></img>");
-                    img.attr("src", restaurantarray[i].previewURL);
-
+                    img.attr("src", restaurantarray[i].image_url);
+                        console.log(restaurantarray[i].image_url);
                     restaurantDiv.append(img);
                     $("#middle").append(restaurantDiv);
 
