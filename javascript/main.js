@@ -104,9 +104,9 @@ function search(){
                     var address = $("<p class='imgText'></p>");
                     var city = $("<p class='imgText'></p>");
                     var zip = $("<p class='imgText'></p>");
-                    name.html("Name: " + restaurantArray[i].name);
-                    phone.html("Phone number: " + restaurantArray[i].phone);
-                    address.html("Address: " + restaurantArray[i].address);
+                    name.html("<b>Name:</b> " + restaurantArray[i].name);
+                    phone.html("<b>Phone number:</b> " + restaurantArray[i].phone);
+                    address.html("<b>Address:</b> " + restaurantArray[i].address);
                     city.html(restaurantArray[i].city);
                     zip.html(restaurantArray[i].postal_code);
 
@@ -126,7 +126,7 @@ function search(){
 
        
 
-         $("#searchbutton").click(function(){
+         $("#searchButton").click(function(){
              search();
          });
        
