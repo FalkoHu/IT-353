@@ -91,23 +91,33 @@ function search(){
     $.get("http://opentable.herokuapp.com/api/restaurants?city="+keyword).done(
             function (response){ 
                
-                 var restaurantarray = response.restaurants;
-                 console.log(restaurantarray);
-                 for(var i=0; i< restaurantarray.length; i++){
+                 var restaurantArray = response.restaurants;
+                 console.log(restaurantArray);
+                 for(var i=0; i< restaurantArray.length; i++){
 
                     var restaurantDiv = $("<div class='restaurantDiv'></div>");
                     var textDiv = $("<div class='textDiv'></div>");
                     var img = $("<img></img>");
-                    img.attr("src", restaurantarray[i].image_url);
-                    var  name = $("<p id='name'></p>");
-                    var phone = $("<p id='phone'></p>")
-                    name.html(restaurantarray[i].name);
-                    phone.html(restaurantarray[i].phone);
+                    img.attr("src", restaurantArray[i].image_url);
+                    var  name = $("<p class='imgText'></p>");
+                    var phone = $("<p class='imgText'></p>");
+                    var address = $("<p class='imgText'></p>");
+                    var city = $("<p class='imgText'></p>");
+                    var zip = $("<p class='imgText'></p>");
+                    name.html("Name: " + restaurantArray[i].name);
+                    phone.html("Phone number: " + restaurantArray[i].phone);
+                    address.html("Address: " + restaurantArray[i].address);
+                    city.html(restaurantArray[i].city);
+                    zip.html(restaurantArray[i].postal_code);
+
                                      
                     restaurantDiv.append(img);
                     restaurantDiv.append(textDiv);
                     textDiv.append(name); 
                     textDiv.append(phone);
+                    textDiv.append(address);
+                    textDiv.append(city);
+                    textDiv.append(zip);
                     $("#middle").append(restaurantDiv);
 
                  }

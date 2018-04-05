@@ -44,7 +44,7 @@ body{
 .restaurantDiv{
     display: -ms-inline-grid;
     width:350px;
-    height:450px;
+    height:500px;
     border:1px solid;
     margin: 1px 1px 1px 1px;
     text-align: center;
