@@ -42,9 +42,9 @@ body{
 
 /* --------------------------------IMAGES------------------------------ */
 .restaurantDiv{
-    display:inline-block;
+    display: -ms-inline-grid;
     width:350px;
-    height:350px;
+    height:450px;
     border:1px solid;
     margin: 1px 1px 1px 1px;
     text-align: center;
