@@ -91,7 +91,6 @@ function search(){
     $.get("http://opentable.herokuapp.com/api/restaurants?city="+keyword).done(
             function (response){ 
                
-
                  var restaurantArray = response.restaurants;
                  console.log(restaurantArray);
                  for(var i=0; i< restaurantArray.length; i++){
