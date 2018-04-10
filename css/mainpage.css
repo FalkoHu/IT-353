@@ -46,25 +46,38 @@ body{
     color: darkred; 
 }
 /* ---------------------------------------------FOR THE API --------------------------------------*/
-/* #middle{
- 
-} */
-.restaurantDiv{
-    vertical-align: bottom;
-    display: inline-grid;
-    width:350px;
-    height:500px;
-    border: 1px solid;
-    margin: 10px 20px 10px 20px;
-    text-align: center;
+#middle{
+    position: absolute;
+    top: 40%;
+    left: 10%;
+} 
+.imgText{
     font-family: 'Lato', sans-serif;
     color: darkred;
     font-size: 15px;
+    
+}
+.restaurantDiv{
+    display: inline-block;
+    width: 1150px;
+    height: 350px;
+    border: 1px solid;
+    margin: 10px 20px 10px 20px;
+    text-align: left;
+}
+
+.review{
+   
+    position: absolute;
+    top: 15px;
+    left: 600px;
+    border: 1px solid darkred;
 }
 
 img{
-    width: 350px;
-    height: 300px;
+    float: left;
+    width: 300px;
+    height: 350px;
 }
 /* ------------------------------------------------------------------------------------- */
 /* ---------------------------------LOGOUT BUTTON---------------------------------------- */

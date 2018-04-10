@@ -96,7 +96,7 @@ function search(){
                  for(var i=0; i< restaurantArray.length; i++){
 
                     var restaurantDiv = $("<div class='restaurantDiv'></div>");
-                    var textDiv = $("<div class='textDiv'></div>");
+                   
                     var img = $("<img></img>");
                     img.attr("src", restaurantArray[i].image_url);
                     var  name = $("<p class='imgText'></p>");
@@ -104,20 +104,25 @@ function search(){
                     var address = $("<p class='imgText'></p>");
                     var city = $("<p class='imgText'></p>");
                     var zip = $("<p class='imgText'></p>");
-                    name.html("<b>Name:</b> " + restaurantArray[i].name);
+                    var input = $("<textarea class='review' placeholder='Enter your review here' rows='10' cols='50'>");
+                
+                    name.html("<b>Name:</b> " + restaurantArray[i].name );
                     phone.html("<b>Phone number:</b> " + restaurantArray[i].phone);
-                    address.html("<b>Address:</b> " + restaurantArray[i].address);
-                    city.html(restaurantArray[i].city);
-                    zip.html(restaurantArray[i].postal_code);
+                    address.html("<b>Address:</b> " + restaurantArray[i].address );
+                    city.html("<b>Zip:</b> "+restaurantArray[i].city);
+                    zip.html("<b>City:</b> "+restaurantArray[i].postal_code);
+                    input.html(input);
+                   
 
                                      
                     restaurantDiv.append(img);
-                    restaurantDiv.append(textDiv);
-                    textDiv.append(name); 
-                    textDiv.append(phone);
-                    textDiv.append(address);
-                    textDiv.append(city);
-                    textDiv.append(zip);
+                   
+                    restaurantDiv.append(name); 
+                    restaurantDiv.append(phone);
+                    restaurantDiv.append(address);
+                    restaurantDiv.append(zip);
+                    restaurantDiv.append(city);
+                    restaurantDiv.append(input);
                     $("#middle").append(restaurantDiv);
 
                  }
