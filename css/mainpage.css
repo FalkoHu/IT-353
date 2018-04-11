@@ -1,15 +1,19 @@
 body{
-    background-color: white;
+    background-image: url("../img/kornet.png");
+    height: 20vw;
+    width: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
-
 #centerMain{
-    top: 30%;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'Lato', sans-serif;
-    color: darkred;
+    color: white;
     position: absolute;
     }
 
@@ -48,8 +52,9 @@ body{
 /* ---------------------------------------------FOR THE API --------------------------------------*/
 #middle{
     position: absolute;
-    top: 40%;
+    top: 70%;
     left: 10%;
+    background-color: white;
 } 
 .imgText{
     font-family: 'Lato', sans-serif;

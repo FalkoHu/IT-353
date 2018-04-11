@@ -1,23 +1,28 @@
 
 body{
-    background-color: white;
+    background-image: url("../img/kornet.png");
+    height: 20vw;
+    width: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
     }
 
 .center{
-    position: relative;
-    top: 30%;
+    position: absolute;
+    top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     -ms-transform: translate(-50%, -50%);
     text-align: center;
 }
 
-#homeh1{
+/* #homeh1{
 
     font-family: 'Lato', sans-serif;
     color: darkred;
     margin-bottom: 45px;
- }   
+ }    */
  /*-----------------------------------------------BUTTONS START HERE-----------------------------*/   
 #login{
     
@@ -29,7 +34,6 @@ body{
      color: darkgray;
      font: bold;
      font-size: 20px;
-
      border: 2px solid darkgray;   
      border-radius: 8px;   
 }
@@ -47,7 +51,6 @@ body{
         color: darkgray;
         font: bold;
         font-size: 20px;
-   
         border: 2px solid darkgray;   
         border-radius: 8px;   
     }

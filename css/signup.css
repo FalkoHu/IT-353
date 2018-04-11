@@ -1,7 +1,11 @@
 body{
-    background-color: white;
-}
-
+    background-image: url("../img/kornet.png");
+    height: 20vw;
+    width: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    }
 /*---------------------TEXT INPUTS--------------------*/
 .tocentersignup{
     position: absolute;
@@ -11,7 +15,7 @@ body{
     -ms-transform: translate(-50%, -50%);
     text-align: center;
     font-family: 'Lato', sans-serif;
-    color: darkred;
+    color: white;
 }
 
 input[type=text]{
