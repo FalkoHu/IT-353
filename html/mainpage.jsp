@@ -1,4 +1,4 @@
-<!-- <%@page contentType="text/html" pageEncoding="UTF-8" %> -->
+<%@page contentType="text/html" pageEncoding="UTF-8" %>
 
 <!DOCTYPE html>
 <html>
@@ -11,9 +11,7 @@
     <script src="../javascript/main.js"></script>
 </head>
 <body>
-
-    <h2>Welcome </h2> < 
-        <!-- <%= request.getParameter("username") %> --> 
+    <h2> Hello <%= request.getParameter("username") %> </h2>
     <button id="logout">Logout</button>
 
     <div id="centerMain">
