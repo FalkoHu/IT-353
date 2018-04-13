@@ -92,7 +92,7 @@ function search(){
             function (response){ 
                
                  var restaurantArray = response.restaurants;
-                 console.log(restaurantArray);
+                 
                  for(var i=0; i< restaurantArray.length; i++){
 
                     var restaurantDiv = $("<div class='restaurantDiv'></div>");
